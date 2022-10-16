@@ -11,6 +11,14 @@ The installation steps have been mentioned below. (Run those command in a termin
 
 ### Additional Features
 
+There are three views - Agent, Customer and CSV Users.
+
+The Agent view is used to respond to customer messages.
+
+The Customer view is used to send messages to agents, where an available agent will be assigned to the user.
+
+To use the data in the CSV file, I have created a separate view to send the data in the interval of 300ms. The fake users can then be assigned to agents one by one.
+
 - Figure out a scheme to help agents divide work amongst themselves, and to prevent multiple agents working on the same message at once.
   - Customers wait in a queue to be assigned to an agent.
   - To do so, an agent an engage with only one customer at a time, to interact with another, the agent needs to disconnect the ongoing converstion first.
